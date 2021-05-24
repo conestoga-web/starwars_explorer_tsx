@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme: Theme) => ({
   root: {
     display: 'flex',
     '& > *': {
-      margin: theme.spacing(1),
+      margin: theme.spacing(5),
     },
   },
 }));
@@ -26,13 +26,31 @@ function Home() {
                 orientation="vertical"
                 aria-label="vertical contained primary button group"
                 variant="contained"
-                color="secondary"
             >
-              <Button href="/starwars_explorer_tsx/#/people">People</Button><br />
-              <Button href="/starwars_explorer_tsx/#/movies">Movies</Button><br />
-              <Button href="/starwars_explorer_tsx/#/planets">Planets</Button>
+              <Button href="/starwars_explorer_tsx/#/people" style={{
+                  borderRadius: 35,
+                  backgroundColor: "#21b6ae",
+                  color: "#ffffff",
+                  padding: "18px 36px",
+                  fontSize: "18px"
+                }} variant="contained">People</Button><br />
+              <Button href="/starwars_explorer_tsx/#/movies" style={{
+                  borderRadius: 35,
+                  backgroundColor: "#21b6ae",
+                  color: "#ffffff",
+                  padding: "18px 36px",
+                  fontSize: "18px"
+                }} variant="contained">Movies</Button><br />
+              <Button href="/starwars_explorer_tsx/#/planets" style={{
+                  borderRadius: 35,
+                  backgroundColor: "#21b6ae",
+                  color: "#ffffff",
+                  padding: "18px 36px",
+                  fontSize: "18px"
+                }} variant="contained">Planets</Button>
             </ButtonGroup>
         </div>
+        
       </section>
     </>  
   );
