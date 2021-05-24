@@ -6,13 +6,14 @@ import List from '@material-ui/core/List';
 import ListItem, { ListItemProps } from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import ListSubheader from '@material-ui/core/ListSubheader';
-import StarIcon from '@material-ui/icons/Star';
+//import StarIcon from '@material-ui/icons/Star';
+import Avatar from '@material-ui/core/Avatar';
 
 const useStyles = makeStyles((theme: Theme) => ({
   root: {
     width: '100%',
     maxWidth: 500,
-    backgroundColor: theme.palette.background.paper,
+    backgroundColor: theme.palette.background.default,
     position: 'relative',
     overflow: 'auto',
     maxHeight: 700,
@@ -51,8 +52,8 @@ function PlanetList({ planetList, loadingPlanetList}) {
               <ul className={classes.ul}>
                 <ListSubheader>
                   {/* <MovieItem movie = {movie} id = {sectionId + 1}/> */}
-                  <ListItemLink href={`/starwars_explorer_tsx/#/planet/${sectionId + 1}`}>
-                  <StarIcon style={{ marginRight: "0.5em" }} /><ListItemText primary={planet.name} />
+                  <ListItemLink href={`/starwars_explorer_tsx/#/planet/${planet.id = sectionId + 1}`}>
+                    <Avatar alt={planet.name} src={`images/planets/${planet.name}.jpg`} />&nbsp;<ListItemText primary={planet.name} />
                   </ListItemLink>
                 </ListSubheader>  
               </ul>

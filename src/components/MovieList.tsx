@@ -6,13 +6,14 @@ import List from '@material-ui/core/List';
 import ListItem, { ListItemProps } from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import ListSubheader from '@material-ui/core/ListSubheader';
-import LocalMoviesIcon from '@material-ui/icons/LocalMovies'
+//import LocalMoviesIcon from '@material-ui/icons/LocalMovies'
+import Avatar from '@material-ui/core/Avatar';
 
 const useStyles = makeStyles((theme: Theme) => ({
   root: {
     width: '100%',
     maxWidth: 500,
-    backgroundColor: theme.palette.background.paper,
+    backgroundColor: theme.palette.background.default,
     position: 'relative',
     overflow: 'auto',
     maxHeight: 600,
@@ -51,8 +52,8 @@ function MovieList({ movieList, loadingMovieList}) {
               <ul className={classes.ul}>
                 <ListSubheader>
                   {/* <MovieItem movie = {movie} id = {sectionId + 1}/> */}
-                  <ListItemLink href={`/starwars_explorer_tsx/#/movie/${sectionId + 1}`}>
-                  <LocalMoviesIcon style={{ marginRight: "0.5em" }} /><ListItemText primary={movie.title} />
+                  <ListItemLink href={`/starwars_explorer_tsx/#/movie/${movie.id = sectionId + 1}`}>
+                    <Avatar alt={movie.title} src={`images/films/${movie.title}.jpg`} />&nbsp;<ListItemText primary={movie.title} />
                   </ListItemLink>
                 </ListSubheader>  
               </ul>

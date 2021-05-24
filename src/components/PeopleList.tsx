@@ -6,13 +6,14 @@ import List from '@material-ui/core/List';
 import ListItem, { ListItemProps } from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import ListSubheader from '@material-ui/core/ListSubheader';
-import PersonIcon from '@material-ui/icons/Person';
+//import PersonIcon from '@material-ui/icons/Person';
+import Avatar from '@material-ui/core/Avatar';
 
 const useStyles = makeStyles((theme: Theme) => ({
   root: {
     width: '100%',
     maxWidth: 500,
-    backgroundColor: theme.palette.background.paper,
+    backgroundColor: theme.palette.background.default,
     position: 'relative',
     overflow: 'auto',
     maxHeight: 700,
@@ -52,14 +53,14 @@ function PeopleList({ peopleList, loadingPeopleList}) {
             <ul className={classes.ul}>
               <ListSubheader>
                 {/* <MovieItem movie = {movie} id = {sectionId + 1}/> */}
-                <ListItemLink href={`/starwars_explorer_tsx/#/person/${(sectionId >= 17) ? sectionId + 2 : sectionId + 1}`}>
-                  <PersonIcon style={{ marginRight: "0.5em" }} /><ListItemText primary={people.name} />
+                <ListItemLink href={`/starwars_explorer_tsx/#/person/${people.id = (sectionId >= 17) ? sectionId + 2 : sectionId + 1}`}>
+                  <Avatar alt={people.name} src={`images/characters/${people.name.replace(/ /g,"_").toLowerCase()}.jpg`} />&nbsp;<ListItemText primary={people.name} />
                 </ListItemLink>
               </ListSubheader>  
             </ul>
           </li>
-      ))}
-    </List>
+          ))}
+        </List>
       )}
     </section>
   );/*  */
