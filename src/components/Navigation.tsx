@@ -26,12 +26,6 @@ function Navigation() {
   const classes = useStyles();
   return (
     <>
-{/*       <div>
-        <Link to="/">Home</Link>
-        <Link to="/people">People</Link>
-        <Link to="/planets">Planets</Link>
-        <Link to="/movies">Movies</Link>
-      </div> */}
       <div className="nav">
         <section className={classes.root}>
           <ButtonGroup

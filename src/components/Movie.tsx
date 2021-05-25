@@ -8,8 +8,6 @@ import Typography from '@material-ui/core/Typography';
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
-      /* width: '100%', */
-      /* maxWidth: 350, */
       minWidth: 275,
       background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
       border: 0,
@@ -20,8 +18,6 @@ const useStyles = makeStyles((theme: Theme) =>
       marginLeft: '20%',
       marginRight: '20%',
       marginTop: '20px',
-      /* height: 48,
-      padding: '0 30px', */
     },
     bullet: {
       display: 'inline-block',

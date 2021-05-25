@@ -22,6 +22,8 @@
   }
   
   .container .a-long-time-ago {
+        position: relative;
+        margin-top: 300px;
       /* cosmétique */
       font-size: 32px;
       color: #4bd5ee;
@@ -29,7 +31,7 @@
       /* Apparition et disparition progressive */
       opacity: 0;
       animation-delay: 1s;
-      animation-duration: 1s;
+      animation-duration: 2s;
       animation-name: a-long-time-ago;
       animation-timing-function: ease-out;
   }

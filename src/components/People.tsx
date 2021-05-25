@@ -9,18 +9,24 @@ import Typography from '@material-ui/core/Typography';
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
-      /* width: '95%', */
-      /* maxWidth: 350, */
-      minWidth: 275,
       background: 'linear-gradient(45deg, #35B62C 30%, #7DFE74 90%)',
       border: 0,
       borderRadius: 3,
       boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
       color: 'white',
       marginBottom: '200px',
-      /* marginLeft: '20%',
-      marginRight: '20%', */
       marginTop: '20px',
+      [theme.breakpoints.down('sm')]: {
+        minWidth: 275,
+      },
+      [theme.breakpoints.between('sm', 'md')]: {
+        maxHeight: 800,
+        minWidth: 360,
+      },
+      [theme.breakpoints.up('md')]: {
+        maxHeight: 900,
+        minWidth: 500,
+      },
     },
     bullet: {
       display: 'inline-block',

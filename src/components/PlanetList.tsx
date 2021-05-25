@@ -11,19 +11,30 @@ import Avatar from '@material-ui/core/Avatar';
 
 const useStyles = makeStyles((theme: Theme) => ({
   root: {
-    /* width: '100%',
-    maxWidth: 500, */
-    /* minWidth: 275, */
     backgroundColor: theme.palette.background.default,
     position: 'relative',
     overflow: 'auto',
-    maxHeight: 600,
     marginTop: '20px',
     marginBottom: '200px',
     paddingRight: '20%',
     paddingLeft: '10%',
     paddingTop: '10%',
     paddingBottom: '10%',
+    [theme.breakpoints.down('sm')]: {
+      maxHeight: 400,
+    },
+    [theme.breakpoints.between('sm', 'md')]: {
+      maxHeight: 650,
+      minWidth: 300,
+    },
+    [theme.breakpoints.between('md', 'lg')]: {
+      maxHeight: 650,
+      minWidth: 600,
+    },
+    [theme.breakpoints.up('lg')]: {
+      maxHeight: 650,
+      minWidth: 800,
+    },
   },
   listSection: {
     backgroundColor: 'inherit',
