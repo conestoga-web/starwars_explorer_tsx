@@ -9,23 +9,34 @@ import ListSubheader from '@material-ui/core/ListSubheader';
 //import LocalMoviesIcon from '@material-ui/icons/LocalMovies'
 import Avatar from '@material-ui/core/Avatar';
 
-const useStyles = makeStyles((theme: Theme) => ({
-  root: {
-    width: '100%',
-    maxWidth: 500,
-    backgroundColor: theme.palette.background.default,
-    position: 'relative',
-    overflow: 'auto',
-    maxHeight: 600,
-  },
-  listSection: {
-    backgroundColor: 'inherit',
-  },
-  ul: {
-    backgroundColor: 'inherit',
-    padding: 0,
-  },
-}));
+const useStyles = makeStyles((theme: Theme) => 
+  createStyles({
+    root: {
+      /* width: '100%', */
+      /* maxWidth: 500, */
+      /* minWidth: 275, */
+      backgroundColor: theme.palette.background.default,
+      position: 'relative',
+      overflow: 'auto',
+      maxHeight: 600,
+      marginBottom: '200px',
+      /* marginRight: '20%',
+      marginLeft: '20%', */
+      marginTop: '20px',
+      paddingRight: '20%',
+      paddingLeft: '10%',
+      paddingTop: '10%',
+      paddingBottom: '10%',
+    },
+    listSection: {
+      backgroundColor: 'inherit',
+    },
+    ul: {
+      backgroundColor: 'inherit',
+      padding: 0,
+    },
+  }),
+);
 
 function ListItemLink(props: ListItemProps<'a', { button?: true }>) {
   return <ListItem button component="a" {...props} />;

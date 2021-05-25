@@ -4,20 +4,23 @@ import Card from '@material-ui/core/Card';
 import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
-import Avatar from '@material-ui/core/Avatar';
+//import Avatar from '@material-ui/core/Avatar';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
-      width: '95%',
+      /* width: '95%', */
+      /* maxWidth: 350, */
       minWidth: 275,
-      maxWidth: 350,
       background: 'linear-gradient(45deg, #35B62C 30%, #7DFE74 90%)',
       border: 0,
       borderRadius: 3,
       boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
       color: 'white',
-      marginBottom: '30px',
+      marginBottom: '200px',
+      /* marginLeft: '20%',
+      marginRight: '20%', */
+      marginTop: '20px',
     },
     bullet: {
       display: 'inline-block',
@@ -31,8 +34,12 @@ const useStyles = makeStyles((theme: Theme) =>
       marginBottom: 12,
     },
     media: {
-      height: 0,
       paddingTop: '56.25%', // 16:9
+      marginLeft: '10%',
+      marginRight: '10%',
+      paddingRight: '20%',
+      paddingLeft: '10%',
+      paddingBottom: '10%',
     },
     expand: {
       transform: 'rotate(0deg)',

@@ -8,15 +8,16 @@ import Typography from '@material-ui/core/Typography';
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
-      width: '95%',
+      /*  width: '95%', */
+      /* maxWidth: 350, */
       minWidth: 275,
-      maxWidth: 350,
       background: 'linear-gradient(45deg, #2196F3 30%, #21CBF3 90%)',
       border: 0,
       borderRadius: 3,
       boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
       color: 'white',
-      marginBottom: '30px',
+      marginBottom: '200px',
+      marginTop: '20px',
     },
     bullet: {
       display: 'inline-block',
@@ -30,8 +31,13 @@ const useStyles = makeStyles((theme: Theme) =>
       marginBottom: 12,
     },
     media: {
-      height: 0,
+      /* height: 0, */
       paddingTop: '56.25%', // 16:9
+      marginLeft: '10%',
+      marginRight: '10%',
+      paddingRight: '20%',
+      paddingLeft: '10%',
+      paddingBottom: '10%',
     },
     expand: {
       transform: 'rotate(0deg)',

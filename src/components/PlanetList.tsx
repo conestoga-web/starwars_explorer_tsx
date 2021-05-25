@@ -11,12 +11,19 @@ import Avatar from '@material-ui/core/Avatar';
 
 const useStyles = makeStyles((theme: Theme) => ({
   root: {
-    width: '100%',
-    maxWidth: 500,
+    /* width: '100%',
+    maxWidth: 500, */
+    /* minWidth: 275, */
     backgroundColor: theme.palette.background.default,
     position: 'relative',
     overflow: 'auto',
-    maxHeight: 700,
+    maxHeight: 600,
+    marginTop: '20px',
+    marginBottom: '200px',
+    paddingRight: '20%',
+    paddingLeft: '10%',
+    paddingTop: '10%',
+    paddingBottom: '10%',
   },
   listSection: {
     backgroundColor: 'inherit',
