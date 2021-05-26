@@ -1,103 +1,126 @@
-/* .container {
-    height: 100%;
-    display: flex;
-    padding-left: 5%;
-    justify-content: left;
-  } */
   body {
     background: black;
   }
   
   .container {
-      width: 100%;
-      height: 100%;
+    width: 100%;
+    height: 100%;
       /* background: black; */
-      margin: 0;
-      overflow: hidden; /* Evite la scrollbar */
+    margin: 0;
+    overflow: hidden;
     
       /* Center items */
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .container .a-long-time-ago {
-        position: relative;
-        margin-top: 300px;
-      /* cosmétique */
-      font-size: 32px;
-      color: #4bd5ee;
+    position: relative;
+    margin-top: 300px;
+
+    font-size: 32px;
+    color: #4bd5ee;
       /* Animation */
-      /* Apparition et disparition progressive */
-      opacity: 0;
-      animation-delay: 1s;
-      animation-duration: 2s;
-      animation-name: a-long-time-ago;
-      animation-timing-function: ease-out;
+    opacity: 0;
+    animation-delay: 1s;
+    animation-duration: 2s;
+    animation-name: a-long-time-ago;
+    animation-timing-function: ease-out;
   }
   
   @keyframes a-long-time-ago {
-      0% {
-          opacity: 0;
-      }
+    0% {
+        opacity: 0;
+    }
   
-      20% {
-          opacity: 1;
-      }
+    20% {
+        opacity: 1;
+    }
   
-      80% {
-          opacity: 1;
-      }
+    80% {
+        opacity: 1;
+    }
   
-      100% {
-          opacity: 0;
-      }
+    100% {
+        opacity: 0;
+    }
   }
   
+  .container .logo {
+    position: absolute;
+    margin: 100px 0 250px -1000px;
+    transform-origin: center top;
+  }
+
+  .container .logo > div > img {
+    position: absolute;
+    opacity: 0; 
+    animation: logo 10s;
+  }
+
+  @keyframes logo {
+    0% {
+        transform: scale(1);
+        opacity: 0;
+    }
+
+    30% {
+        transform: scale(1);
+        opacity: 0;
+    }
+
+    40% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
   .container .crawl {
-      /* centrage de l'élément' */
-      position: absolute;
-      top: 45%;
-      left: 50%;
-      width: 800px;
-      margin: 0 0 0 -400px;
-      top: auto;
-      bottom: 0;
-      height: 50em;
-      /* cosmétique */
-      color: #ffff66;    
-      font-size: 64px;
-      text-align: justify;
-      /* Applique la transformation  */
-      transform-origin: center bottom;
-      transform: perspective(300px) rotateX(25deg);
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    width: 800px;
+    margin: 0 0 0 -400px;
+    top: auto;
+    bottom: 0;
+    height: 50em;
+
+    color: #ffff66;    
+    font-size: 64px;
+    text-align: justify;
+  
+    transform-origin: center bottom;
+    transform: perspective(300px) rotateX(25deg);
   }
   
   .container .crawl > div {
-      /* positionne la div en bas de l'écran (non visible) */
-      /* l'animation la fait remonter progressivement */
-      position: absolute;
-      top: 100%; 
-      animation-delay: 2s; /* Démarre l'animation après la première */
-      animation-duration: 20s;
-      animation-name: crawl;
-      animation-timing-function: linear;
+    position: absolute;
+    top: 100%; 
+    animation-delay: 10s;
+    animation-duration: 20s;
+    animation-name: crawl;
+    animation-timing-function: linear;
   }
   
   @keyframes crawl {
-      0% {
-          top: 100%;
-          opacity: 1;
-      }
+    0% {
+        top: 100%;
+        opacity: 1;
+    }
   
-      80% {
-          opacity: 1; /* disparition progressive à la fin */
-      }
+    80% {
+        opacity: 1;
+    }
   
-      100% {
-          top: 0;
-          opacity: 0;
-      }
+    100% {
+        top: 0;
+        opacity: 0;
+    }
   }
 
   @media screen and (max-width: 600px) {}

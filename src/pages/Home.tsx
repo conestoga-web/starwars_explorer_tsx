@@ -18,12 +18,16 @@ function Home() {
           <div className="a-long-time-ago">
               A long time ago, in a galaxy far,<br /> far away...
           </div>
-
+          <div className="logo">
+            <div>
+              <img alt="logo" src="images/Star_Wars_Logo.jpg" />
+            </div>
+          </div>
           <div className="crawl">
               <div>
                   <p>
                       It is a period of civil war.
-                      Rebel spaceships, striking
+                      Rebel spaceships, strikings
                       from a hidden base, have won
                       their first victory against
                       the evil Galactic Empire.
