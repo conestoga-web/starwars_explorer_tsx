@@ -19,9 +19,7 @@ function Home() {
               A long time ago, in a galaxy far,<br /> far away...
           </div>
           <div className="logo">
-            <div>
-              <img alt="logo" src="images/Star_Wars_Logo.jpg" />
-            </div>
+            <img alt="logo" src="images/Star_Wars_Logo.jpg" />
           </div>
           <div className="crawl">
               <div>
@@ -56,7 +54,6 @@ function Home() {
         <ReactAudioPlayer
           src="audio/Star-Wars.mp3"
           autoPlay
-          loop
         />
       </body>
     </>  

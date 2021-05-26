@@ -49,11 +49,11 @@
   
   .container .logo {
     position: absolute;
-    margin: 100px 0 250px -1000px;
+    margin: 0 0 250px -1000px;
     transform-origin: center top;
   }
 
-  .container .logo > div > img {
+  .container .logo > img {
     position: absolute;
     opacity: 0; 
     animation: logo 10s;
