@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme: Theme) =>
       },
       [theme.breakpoints.up('lg')]: {
         maxHeight: 700,
-        minWidth: 800,
+        minWidth: 700,
       },
     },
     listSection: {

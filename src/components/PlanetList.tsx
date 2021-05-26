@@ -21,19 +21,19 @@ const useStyles = makeStyles((theme: Theme) => ({
     paddingTop: '10%',
     paddingBottom: '10%',
     [theme.breakpoints.down('sm')]: {
-      maxHeight: 900,
+      maxHeight: 400,
     },
     [theme.breakpoints.between('sm', 'md')]: {
-      maxHeight: 650,
+      maxHeight: 600,
       minWidth: 300,
     },
     [theme.breakpoints.between('md', 'lg')]: {
-      maxHeight: 650,
-      minWidth: 600,
+      maxHeight: 600,
+      minWidth: 500,
     },
     [theme.breakpoints.up('lg')]: {
-      maxHeight: 650,
-      minWidth: 800,
+      maxHeight: 600,
+      minWidth: 600,
     },
   },
   listSection: {
