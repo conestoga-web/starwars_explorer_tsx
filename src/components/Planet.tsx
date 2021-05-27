@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme: Theme) =>
       marginBottom: '200px',
       marginTop: '20px',
       [theme.breakpoints.down('sm')]: {
-        minWidth: 275,
+        minWidth: 300,
       },
       [theme.breakpoints.between('sm', 'md')]: {
         maxHeight: 800,
