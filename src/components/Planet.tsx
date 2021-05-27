@@ -70,7 +70,7 @@ function Planet({ planet, loadingPlanet }) {
       {!loadingPlanet && planet && (
         <Card className={classes.root} variant="outlined">
           <CardContent>
-            <Typography variant="h5" component="h2">
+            <Typography variant="h5" component="h2" align="center">
               {bull}{planet.name}{bull}
             </Typography>
             <br />

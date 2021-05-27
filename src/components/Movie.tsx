@@ -71,7 +71,7 @@ function Movie({ movie, loadingMovie }) {
       {!loadingMovie && movie && (
         <Card className={classes.root} variant="outlined">
           <CardContent>
-            <Typography variant="h5" component="h2">
+            <Typography variant="h5" component="h2" align="center">
               {bull}{movie.title}{bull}
             </Typography>
             <br />

@@ -71,7 +71,7 @@ function People({ people, loadingPeople }) {
       {!loadingPeople && people && (
         <Card className={classes.root} variant="outlined">
           <CardContent>
-            <Typography variant="h5" component="h2">
+            <Typography variant="h5" component="h2" align="center">
               {bull}{people.name}{bull}
             </Typography>
             <br />
